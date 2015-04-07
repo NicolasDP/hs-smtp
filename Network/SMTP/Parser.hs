@@ -66,11 +66,14 @@ satisfy errMsg test = do
 
 -- Parse LocalPart ------------------------------------------------------------
 
+isATextList :: String
+isATextList = "!#$%&'*+-/=?^_`{|}~"
+
 isAText :: Char -> Bool
 isAText c
     =  c `elem` ['a'..'z']
     || c `elem` ['A'..'Z']
-    || c `elem` "!#$%&'*+-/=?^_`{|}~"
+    || c `elem` isATextList
 
 parseAtom :: Parser ByteString
 parseAtom = parserTakeWhile isAText
