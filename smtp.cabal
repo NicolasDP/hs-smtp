@@ -56,3 +56,7 @@ Executable smtp-cli
                      , bytestring
                      , hourglass
                      , smtp
+
+source-repository head
+  type: git
+  location: https://github.com/NicolasDP/hs-smtp
