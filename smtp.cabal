@@ -1,7 +1,7 @@
 name:                smtp
 version:             0.1.0.0
 synopsis:            Simple Message Transfer Protocal (Haskell Library)
--- description:         
+description:         Simple Message Transfer Protocal (Haskell Library)
 license:             BSD3
 license-file:        LICENSE
 author:              Nicolas DI PRIMA
